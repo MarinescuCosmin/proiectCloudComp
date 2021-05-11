@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFF</color>
+    <color name="green">#DF2EC232</color>
+    <color name="red">#BB0606</color>
+    <color name="colorBackgroundLayer">#C6000000</color>
+    <color name="colorTextHint">#BDBDBD</color>
+    <color name="user_details_button">#A82C0D</color>
+    <color name="black">#000000</color>
+    <color name = "blue">#488FE2</color>
+
+    <array name="calorii">
+        <item>@color/white</item>
+
+    </array>
+    <array name="calorii_arse">
+        <item>@color/blue</item>
+    </array>
+</resources>

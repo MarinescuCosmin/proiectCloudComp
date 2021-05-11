@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nume_exercitiu_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:text="numeleeee alimentuluiiiiiiiii aaaaaa bbbbbb"
+        android:textAlignment="center" />
+
+    <EditText
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:id="@+id/editTextTimp_exercitiu_dialog"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Introduceti timpul in minute"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_gravity="center"
+            android:text="Calorii arse:">
+
+        </TextView>
+
+        <TextView
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:id="@+id/calorii_arse_exercitiu_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*?*" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonPreviewValoriDialogExercise"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_main"
+        android:text="Preview Calorii Arse"
+        android:textColor="#FFF">
+
+    </Button>
+
+
+</LinearLayout>

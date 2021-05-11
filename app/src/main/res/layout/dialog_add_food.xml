@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/nume_aliment_dialog"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_height="wrap_content"
+        android:text="numeleeee alimentuluiiiiiiiii aaaaaa bbbbbb"
+        android:textAlignment="center" />
+
+    <EditText
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:id="@+id/editTextCantitate_aliment_dialog"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Introduceti cantitatea in grame"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:text="Proteine:">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/proteine_aliment_dialog"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"
+            android:text="*?*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lipide:">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/lipide_aliment_dialog"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"
+            android:text="*?*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Carbohidrati:">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/carbohidrati_aliment_dialog"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"
+            android:text="*?*" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:text="Calorii:">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/calorii_aliment_dialog"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"
+            android:text="*?*" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonPreviewValoriDialogFood"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_main"
+        android:text="Preview Valori Nutritionale"
+        android:textColor="#FFF">
+
+    </Button>
+
+
+</LinearLayout>

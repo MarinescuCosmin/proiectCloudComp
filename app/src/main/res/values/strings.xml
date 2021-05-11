@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">C-Fit</string>
+    <string-array name="lifestyles">
+        <item>little or no exercise</item>
+        <item>exercise 1-3 times a week</item>
+        <item>exercise 4-5 times/week</item>
+        <item>daily exercise or intense exercise 3-4 times/week</item>
+        <item>intense exercise 6-7 times/week</item>
+        <item>very intense exercise daily, or physical job</item>
+    </string-array>
+
+    <string name="info1"><b>•	Exercise:</b> 15-30 minutes of elevated heart rate activity</string>
+    <string name="info2"><b>•	Intense exercise: </b>45-120 minutes of elevated heart rate activity</string>
+    <string name="info3"><b>•	Very intense exercise:</b> 2+ hours of elevated heart rate activity</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="emailEmpty">Email is required</string>
+    <string name="passwordEmpty">Password is required</string>
+</resources>

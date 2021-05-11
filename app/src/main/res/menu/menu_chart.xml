@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mancare_saptamanala"
+        android:title="Weekly food"/>
+    <item
+        android:id="@+id/exercitii_saptamanale"
+        android:title="Weekly exercises"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/mancare_si_exercitii_saptamanale"
+        android:title="Weekly food and exercise" />
+    <item
+        android:id="@+id/greutate_zilnica"
+        android:title="Daily weight" />
+
+</menu>

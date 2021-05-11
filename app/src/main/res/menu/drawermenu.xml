@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <group android:checkableBehavior="single">
+       <item android:id="@+id/home" android:title="Home"
+           android:icon="@drawable/image_home"
+           android:iconTint="@color/white"></item>
+       <item android:id="@+id/calendar" android:title="Calendar"
+           android:icon="@drawable/image_calendar"
+           android:iconTint="@color/white"></item>
+       <item android:id="@+id/steps" android:title="Steps"
+           android:icon="@drawable/image_steps"
+           android:iconTint="@color/white"></item>
+       <item android:id="@+id/chart" android:title="Chart"
+           android:icon="@drawable/image_chart"
+           android:iconTint="@color/white"></item>
+
+   </group>
+
+    <item android:title="User" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/profile" android:title="Profile"
+                    android:icon="@drawable/image_profile"
+                    android:iconTint="@color/white"></item>
+                <item android:id="@+id/logout" android:title="Log Out"
+                    android:icon="@drawable/image_logout"
+                    android:iconTint="@color/white"></item>
+
+            </group>
+
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Application">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/about" android:title="RetroFitApi"
+                    android:icon="@drawable/image_about"
+                    android:iconTint="@color/white"></item>
+            </group>
+        </menu>
+
+    </item>
+
+
+
+
+
+
+
+
+</menu>

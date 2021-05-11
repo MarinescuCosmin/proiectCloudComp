@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242323">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#242323"
+        android:text="Foods"/>
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/dialog_listView_food"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:background="#242323"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Exercises"/>
+
+
+    <ListView
+        android:background="#242323"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dialog_listView_exercises"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+</LinearLayout>

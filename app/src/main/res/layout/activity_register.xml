@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/imagine2">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/login_backgroun_incercare3"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    <ImageView
+        android:id="@+id/imageLogo2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+
+    <TextView
+            android:id="@+id/textViewRegister"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:text="Sign up for an account"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogo2"
+
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewRegisterEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:text="email"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/viewEmailDivider2"
+            app:layout_constraintStart_toEndOf="@id/imageEmail2"
+            app:layout_constraintTop_toBottomOf="@id/textViewRegister" />
+
+
+        <View
+            android:id="@+id/viewEmailDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@color/colorTextHint"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmailRegister" />
+
+        <ImageView
+            android:id="@+id/imageEmail2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/image_email"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/viewEmailDivider2"
+            app:layout_constraintStart_toStartOf="@id/viewEmailDivider2"
+            app:layout_constraintTop_toTopOf="@id/textViewRegisterEmail" />
+
+    <EditText
+        android:id="@+id/editTextEmailRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        android:backgroundTint="#E1FFFFFF"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="email@gmail.com"
+        android:inputType="textEmailAddress"
+        android:minHeight="35dp"
+        android:textColor="#D8FFFFFF"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider2"
+        app:layout_constraintStart_toEndOf="@id/imageEmail2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegisterEmail" />
+
+
+    <TextView
+        android:id="@+id/textViewPassword2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:text="password"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider2"
+        app:layout_constraintStart_toEndOf="@id/imageEmail2"
+        app:layout_constraintTop_toBottomOf="@id/viewEmailDivider2" />
+
+    <ImageView
+        android:id="@+id/imagePassword2"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/image_password"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/viewPasswordDivider"
+        app:layout_constraintStart_toStartOf="@id/viewEmailDivider2"
+        app:layout_constraintTop_toTopOf="@id/textViewPassword2" />
+    <EditText
+        android:id="@+id/editTextPasswordRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        android:backgroundTint="#E1FFFFFF"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="*******"
+        android:inputType="textPassword"
+        android:minHeight="35dp"
+        android:textColor="#D8FFFFFF"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewEmailDivider2"
+        app:layout_constraintStart_toEndOf="@+id/imageEmail2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPassword2" />
+    <View
+        android:id="@+id/viewPasswordDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/editTextPasswordRegister" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/login_button_background"
+        android:fontFamily="@font/alegreya_bold_italic"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/viewPasswordDivider" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:theme="@style/RadioButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_backgroun_incercare3"
+    android:focusableInTouchMode="true"
+    tools:context=".UserDetailsActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/black"
+        app:headerLayout="@layout/header"
+
+        app:itemIconTint="#FFF"
+        app:itemTextColor="#FFF"
+        app:menu="@menu/drawermenu"
+
+
+        ></com.google.android.material.navigation.NavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="#FFF"
+
+
+            ></androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Age"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextAge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextAge"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Enter your age"
+
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorTextHint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewAge"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/textViewHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height(cm)"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextHeight"
+            app:layout_constraintEnd_toEndOf="@+id/textViewAge"
+            app:layout_constraintStart_toStartOf="@+id/textViewAge"
+            app:layout_constraintTop_toTopOf="@+id/editTextHeight" />
+
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:textAlignment="center"
+            android:ems="10"
+            android:hint="Enter your hegiht in CM"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/colorTextHint"
+            app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+            app:layout_constraintStart_toStartOf="@+id/editTextAge"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+
+        <TextView
+            android:id="@+id/textViewWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight(kg)"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextWeight"
+            app:layout_constraintEnd_toEndOf="@+id/textViewAge"
+            app:layout_constraintStart_toStartOf="@+id/textViewAge"
+            app:layout_constraintTop_toTopOf="@+id/editTextWeight" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:ems="10"
+            android:textAlignment="center"
+            android:hint="Enter your weight in KG"
+            android:inputType="numberDecimal"
+            android:paddingLeft="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/colorTextHint"
+            app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+            app:layout_constraintStart_toStartOf="@+id/editTextAge"
+            app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+        <TextView
+            android:id="@+id/textViewGainLose"
+            android:layout_width="142dp"
+            android:layout_height="50dp"
+            android:text="Do you want to lose/gain weight?"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroupGainLose"
+            app:layout_constraintEnd_toEndOf="@+id/textViewWeight"
+            app:layout_constraintStart_toStartOf="@+id/textViewWeight"
+            app:layout_constraintTop_toTopOf="@+id/radioGroupGainLose"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGainLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/editTextWeight"
+            app:layout_constraintStart_toStartOf="@+id/editTextWeight"
+            app:layout_constraintTop_toBottomOf="@+id/editTextWeight"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_gain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="gain"
+                android:textColor="#FFF"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_lose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="lose"
+                android:textColor="#FFF"></RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewWeightLoss"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="How much weight do you want to lose/gain?"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroupLoseWeight"
+            app:layout_constraintEnd_toEndOf="@+id/textViewGainLose"
+            app:layout_constraintStart_toStartOf="@+id/textViewGainLose"
+            app:layout_constraintTop_toTopOf="@+id/radioGroupLoseWeight"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupLoseWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroupGainLose"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupGainLose"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupGainLose"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="0.25kg / week (mild loss)"
+                android:textColor="#FFF"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="0.5kg / week (medium loss)"
+                android:textColor="#FFF"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_extreme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="1kg / week (extreme loss)"
+                android:textColor="#FFF"></RadioButton>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroupLoseWeight"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupLoseWeight"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupLoseWeight"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="male"
+                android:textColor="#FFF"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF"
+                android:text="female"
+                android:textColor="#FFF"></RadioButton>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroupGender"
+            app:layout_constraintEnd_toEndOf="@+id/textViewAge"
+            app:layout_constraintStart_toStartOf="@+id/textViewAge"
+            app:layout_constraintTop_toTopOf="@+id/radioGroupGender" />
+
+
+        <Button
+            android:id="@+id/button_user_detail_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="60dp"
+            android:text="Next"
+            android:background="@null"
+            android:textColor="@color/user_details_button"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerLifestyle" />
+
+        <TextView
+            android:id="@+id/textViewLifestyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Lifestyle"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewAge"
+            app:layout_constraintStart_toStartOf="@+id/textViewAge"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
+
+        <Spinner
+            android:id="@+id/spinnerLifestyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewLifestyle"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroupGender"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupGender"
+            app:layout_constraintTop_toTopOf="@+id/textViewLifestyle" />
+
+        <Button
+            android:id="@+id/buttonInfo"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_button2"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerLifestyle"
+            app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/spinnerLifestyle"
+            app:layout_constraintTop_toTopOf="@+id/spinnerLifestyle" />
+
+        <Button
+            android:id="@+id/button_user_detail_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="60dp"
+            android:text="Cancel"
+            android:background="@null"
+            android:textColor="@color/user_details_button"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewGender"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerLifestyle"
+            app:layout_constraintVertical_bias="0.482" />
+
+        <Button
+            android:id="@+id/button_user_detail_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="60dp"
+            android:text="Save"
+            android:background="@null"
+            android:textColor="@color/user_details_button"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroupGender"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerLifestyle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
