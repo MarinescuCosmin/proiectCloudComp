@@ -27,11 +27,16 @@ Screenshot-uri aplicatie:
 Request / response si metode http: 
 
 ![image](https://user-images.githubusercontent.com/58150727/117864811-e23a1900-b29d-11eb-90f1-008ebc6c4a88.png)
+
 ![image](https://user-images.githubusercontent.com/58150727/117864862-f120cb80-b29d-11eb-9ef9-28220d346c64.png)
 
 
 ![image](https://user-images.githubusercontent.com/58150727/117864740-cdf61c00-b29d-11eb-9bd9-b6fde32b27b4.png)
+
 ![image](https://user-images.githubusercontent.com/58150727/117864933-072e8c00-b29e-11eb-8f20-191b19775953.png)
+
 ![image](https://user-images.githubusercontent.com/58150727/117864953-0d246d00-b29e-11eb-9370-b3850ca26f76.png)
+
 ![image](https://user-images.githubusercontent.com/58150727/117866858-49f16380-b2a0-11eb-8aa6-9edb82816729.png)
+
 
